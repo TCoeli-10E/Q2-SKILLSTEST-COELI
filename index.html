@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>skills test</title>
+    <style>
+        button {
+            padding: 10px 16px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            background: #bfa14a;
+            color: #3a2c0a;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #output {
+            white-space: pre-line;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select an Option</h1>
+    
+    <button py-click="display_club_info1">Option 1</button>
+    <button py-click="display_club_info2">Option 2</button>
+    <button py-click="display_club_info3">Option 3</button>
+    <button py-click="clear_club_info">Clear</button>
+
+    <div id="output"></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
